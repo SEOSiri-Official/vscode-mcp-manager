@@ -1,8 +1,8 @@
 {
   "name": "seosiri-vscode-mcp-manager",
-  "displayName": "SEOSiri Model Context Protocol (MCP) Suite Manager",
-  "description": "VS Code Extension & MCP Suite Manager orchestrating IDE configuration generation, extension security audits, and live edge gateway inspection across Cursor, Claude, and VS Code.",
-  "version": "1.0.0",
+  "displayName": "MCP Suite Manager (Model Context Protocol) - SEOSiri",
+  "description": "Enterprise MCP Manager for Cursor, Claude Desktop & VS Code. Orchestrates Model Context Protocol servers, auto-generates JSON configs & audits AI agent tools.",
+  "version": "1.0.1",
   "publisher": "seosiri",
   "engines": {
     "vscode": "^1.85.0"
@@ -12,32 +12,39 @@
     "Machine Learning",
     "Other"
   ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "cursor",
+    "cursor-ai",
+    "claude",
+    "claude-desktop",
+    "ai-agent",
+    "llm",
+    "copilot",
+    "seosiri",
+    "anthropic",
+    "openai",
+    "chatgpt",
+    "json-rpc",
+    "developer-tools"
+  ],
   "main": "dist/index.js",
   "type": "module",
-  "bin": {
-    "seosiri-vscode-mcp": "dist/index.js"
-  },
-  "scripts": {
-    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --external:vscode --format=cjs --platform=node --minify",
-    "start": "node dist/index.js",
-    "vscode:package": "npx @vscode/vsce package --no-yarn",
-    "vscode:prepublish": "npm run build"
-  },
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/SEOSiri-Official/vscode-mcp-manager.git"
   },
   "homepage": "https://developers.seosiri.com/",
-  "keywords": [
-    "model-context-protocol",
-    "mcp",
-    "vscode-extension",
-    "cursor-ai",
-    "claude-desktop",
-    "seosiri"
-  ],
-  "author": "Momenul Ahmad <info@seosiri.com> (https://seosiri.com)",
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SEOSiri-Official/vscode-mcp-manager/issues"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --external:vscode --format=cjs --platform=node --minify",
+    "vscode:prepublish": "npm run build"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.1",
     "zod": "^3.22.4"
@@ -45,12 +52,7 @@
   "devDependencies": {
     "@types/node": "^20.11.24",
     "@vscode/vsce": "^2.24.0",
-    "esbuild": "^0.28.2",
+    "esbuild": "^0.25.0",
     "typescript": "^5.3.3"
-  },
-  "activationEvents": [
-    "onStartupFinished",
-    "onLanguage:json"
-  ],
-  "icon": "icon.png"
+  }
 }
