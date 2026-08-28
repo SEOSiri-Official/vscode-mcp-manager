@@ -1,0 +1,8 @@
+name = "vscode-mcp-manager"
+main = "worker.js"
+compatibility_date = "2026-08-01"
+workers_dev = true
+
+routes = [
+  { pattern = "vscode.seosiri.com", custom_domain = true }
+]
