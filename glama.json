@@ -1,0 +1,8 @@
+{
+"$schema": "https://glama.ai/mcp/schemas/server.json",
+"name": "vscode-mcp-manager",
+"description": "VS Code Extension & Model Context Protocol Suite Orchestrator for Cursor, Claude, and VS Code IDEs.",
+"maintainers": [
+"MOBILEPHONE"
+]
+}
