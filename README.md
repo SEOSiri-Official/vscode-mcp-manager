@@ -1,7 +1,7 @@
 # seosiri-vscode-mcp-manager
 
-[![SEOSiri VSCode MCP Manager on Glama](https://glama.ai/mcp/servers/SEOSiri-Official/vscode-mcp-manager/badges/score.svg)](https://glama.ai/mcp/servers/SEOSiri-Official/vscode-mcp-manager)
 
+> 🛡️ **Verified Glama MCP Server:** [SEOSiri VSCode MCP on Glama](https://glama.ai/mcp/servers/SEOSiri-Official/vscode-mcp-manager)
 > 📖 **Official Architecture & Documentation:** [SEOSiri Developer Portal](https://developers.seosiri.com/) | [Central Master Directory](https://www.seosiri.com/2026/07/seosiri-mcp-servers.html) | [Corporate Gateway](https://seosiri.com/)
 
 An enterprise Model Context Protocol (MCP) server and VS Code Suite Manager orchestrating IDE configuration generation, extension manifest security audits, and live edge gateway inspection across Cursor, Claude Desktop, and VS Code.

@@ -3,14 +3,14 @@
   "displayName": "SEOSiri Model Context Protocol (MCP) Suite Manager",
   "description": "VS Code Extension & MCP Suite Manager orchestrating IDE configuration generation, extension security audits, and live edge gateway inspection across Cursor, Claude, and VS Code.",
   "version": "1.0.0",
-  "publisher": "SEOSiri",
+  "publisher": "seosiri",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Machine Learning",
     "Programming Languages",
-    "Developer Tools"
+    "Machine Learning",
+    "Other"
   ],
   "main": "dist/index.js",
   "type": "module",
@@ -18,9 +18,10 @@
     "seosiri-vscode-mcp": "dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --external:vscode --format=cjs --platform=node --minify",
     "start": "node dist/index.js",
-    "vscode:package": "npx @vscode/vsce package --no-yarn"
+    "vscode:package": "npx @vscode/vsce package --no-yarn",
+    "vscode:prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -44,10 +45,12 @@
   "devDependencies": {
     "@types/node": "^20.11.24",
     "@vscode/vsce": "^2.24.0",
+    "esbuild": "^0.28.2",
     "typescript": "^5.3.3"
   },
   "activationEvents": [
     "onStartupFinished",
     "onLanguage:json"
-  ]
+  ],
+  "icon": "icon.png"
 }

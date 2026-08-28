@@ -1,0 +1,12 @@
+.vscode/**
+.github/**
+src/**
+tests/**
+tsconfig.json
+worker.js
+wrangler.toml
+glama.json
+.gitignore
+.npmignore
+**/*.map
+node_modules/**
