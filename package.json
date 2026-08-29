@@ -2,7 +2,7 @@
   "name": "seosiri-vscode-mcp-manager",
   "displayName": "MCP Suite Manager (Model Context Protocol) - SEOSiri",
   "description": "Enterprise MCP Manager for Cursor, Claude Desktop & VS Code. Orchestrates Model Context Protocol servers, auto-generates JSON configs & audits AI agent tools.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "seosiri",
   "engines": {
     "vscode": "^1.85.0"
