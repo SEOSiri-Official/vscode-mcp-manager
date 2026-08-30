@@ -131,7 +131,7 @@ const SEOSIRI_CATALOG: Record<string, ServerMeta> = {
 };
 
 const server = new Server(
-  { name: 'seosiri-vscode-mcp-manager', version: '1.0.3' },
+  { name: 'seosiri-vscode-mcp-manager', version: '1.0.4' },
   { capabilities: { tools: {} } }
 );
 
