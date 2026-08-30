@@ -1,13 +1,12 @@
-# Generated production Dockerfile for SEOSiri VSCode MCP Manager
 FROM node:20-slim AS builder
 
 WORKDIR /app
 
-# Copy package manifests and install dependencies
+# Copy dependency manifests and install all modules
 COPY package*.json tsconfig.json ./
 RUN npm install
 
-# Copy source code and compile TypeScript to dist/index.js
+# Copy source code and compile TypeScript to ESM in dist/
 COPY src/ ./src/
 RUN npm run build
 
@@ -19,7 +18,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install --omit=dev
 
-# Copy compiled executable bundle from builder
+# Copy compiled ESM files from builder stage
 COPY --from=builder /app/dist ./dist
 
 # Run MCP server over stdio
