@@ -30,7 +30,7 @@
     "json-rpc",
     "developer-tools"
   ],
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "type": "module",
   "icon": "icon.png",
   "repository": {
@@ -42,7 +42,7 @@
     "url": "https://github.com/SEOSiri-Official/vscode-mcp-manager/issues"
   },
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js --banner:js=\"#!/usr/bin/env node\" --external:vscode --format=cjs --platform=node --minify",
+    "build": "tsc",
     "vscode:prepublish": "npm run build",
     "start": "node dist/index.js",
     "postinstall": "npm run build"
